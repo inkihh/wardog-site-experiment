@@ -56,7 +56,9 @@ README.md  CONTRIBUTING.md   Contributor onboarding
     (legal/contact + Sources row); see [theming.md](theming.md).
   - `head` — a single inline `<script>` (`OPEN_EXTERNAL_IN_NEW_TAB`); see below.
   - `customCss` — `@fontsource-variable/inter`, `@fontsource-variable/oswald`, then `./src/styles/theme.css`.
-  - `sidebar` — five discipline groups, each `items: [{ autogenerate: { directory } }]`; see [content.md](content.md).
+  - `sidebar` — five discipline groups. Four autogenerate (`items: [{ autogenerate: { directory } }]`);
+    **Scripting is hand-tuned** — explicit slug entries plus a nested "Engine subsystems" group
+    wrapping an autogenerate of `scripting/engine-subsystems/`. See [content.md](content.md).
 
 ## Behavior: open external links in a new tab
 
@@ -78,4 +80,8 @@ content links in one place — chosen over per-component overrides.
   row, and a head script that opens **all external links** in a new tab.
 - **Writing (Milestone 2, in progress):** wrote the Getting-Started onboarding pages
   (`modding-overview`, `workbench-setup`); added a `sources` page crediting external references;
-  research notes captured under `resources/research/` (indexed from `RESEARCH.md`).
+  research notes captured under `resources/research/` (indexed from `RESEARCH.md`). Then wrote the
+  full **Scripting** section — `enscript-basics`, `common-gotchas`, `game-structure`, and the new
+  nested `engine-subsystems/` group (`overview`, `inventory`, `actions`, `networking`,
+  `persistence`), replacing the old flat `engine-subsystems.md` stub and hand-tuning the Scripting
+  sidebar group for the nested label.

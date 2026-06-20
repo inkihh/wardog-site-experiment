@@ -17,14 +17,20 @@ the two.
 
 ## What this section covers
 
-- **[EnScript basics](/scripting/enscript-basics/)** — types, classes, modules, and
-  the things that differ from languages you already know.
-- **[Common gotchas](/scripting/common-gotchas/)** — the sharp edges: ref counting,
-  null handling, client/server split, mod load order.
-- **[Engine subsystems](/scripting/engine-subsystems/)** — the systems you reach for
-  most: inventory, actions, RPC, persistence, and more.
-- **[Game structure](/scripting/game-structure/)** — how the codebase is laid out and
-  how mods slot into it.
+The pages read foundational → applied — work through them in order:
+
+- **[EnScript basics](/scripting/enscript-basics/)** — types, classes, the `modded class`
+  injection model, references, and the things that differ from languages you already know.
+- **[Common gotchas](/scripting/common-gotchas/)** — the sharp edges: the client/server
+  split, reference counting, null handling, mod load order, and `modded class` pitfalls.
+- **[Game structure](/scripting/game-structure/)** — the script module layers, the access
+  rules between them, and how mods compile in and merge with vanilla.
+- **[Engine subsystems](/scripting/engine-subsystems/overview/)** — the systems you reach
+  for most, one page each:
+  [inventory & attachments](/scripting/engine-subsystems/inventory/),
+  [actions](/scripting/engine-subsystems/actions/),
+  [networking & RPC](/scripting/engine-subsystems/networking/), and
+  [persistence](/scripting/engine-subsystems/persistence/).
 
 ## What this section is not
 

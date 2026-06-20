@@ -269,6 +269,15 @@ hr.hazard {
 	);
 }
 
+/* Starlight reserves --sl-mobile-toc-height (3rem on mobile) in .main-frame
+ * unconditionally, but the mobile "On this page" bar only renders on pages that
+ * have a table of contents. On pages without one — the splash landing page, and
+ * any page with no subheadings — that left a phantom gap between the header and
+ * the content. Zero the reservation when no mobile TOC element is present. */
+:root:not(:has(mobile-starlight-toc)) {
+	--sl-mobile-toc-height: 0rem;
+}
+
 mobile-starlight-toc nav {
 	top: calc(var(--sl-nav-height) - 1px + var(--dzm-banner-h));
 }

@@ -193,10 +193,12 @@ separately from this project:
    somewhere to write into.
 2. **Writing** *(highest ongoing priority — now the focus)* — populate the priority categories (asset
    pipeline / P3D, scripting, onboarding) with genuinely useful, human-authored material.
-   *Delivered so far:* the Getting Started onboarding pages (modding overview, Workbench setup) and
-   the full Scripting section (EnScript basics, common gotchas, game structure, and the engine
-   subsystems — inventory, actions, networking, persistence). *Still open:* the asset pipeline / P3D
-   pages and the tooling deep-dives.
+   *Delivered so far:* the Getting Started onboarding pages (modding overview, Workbench setup), the
+   full Scripting section (EnScript basics, common gotchas, game structure, and the engine
+   subsystems — inventory, actions, networking, persistence), and the full Asset Work section
+   (pipeline & formats, P3D setup, proxies, selections & naming, memory points, materials/RVMAT,
+   textures, configs — with inline worked examples for a static prop, a 3D optic, and a vehicle).
+   *Still open:* the Tooling & Setup deep-dives.
 3. **Search** — keep the built-in static search (Pagefind) by default; only switch to a stronger
    system (e.g. Algolia) if it's *really needed* once there's enough content and traffic.
 4. **Later / under consideration** — deeper LLM-consumption optimizations (e.g. an AST-aware

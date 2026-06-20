@@ -6,12 +6,14 @@ static documentation site.
 
 🔗 **Live site:** https://dayzmodders.inkihh.de
 
-> **Status: early foundation, content underway.** The site is scaffolded and themed,
-> with the full discipline taxonomy in place. The **Getting Started** guides, every
-> section's overview, and the full **Scripting** section (EnScript basics, common
+> **Status: foundation in place, content well underway.** The site is scaffolded and
+> themed, with the full discipline taxonomy in place. The **Getting Started** guides,
+> every section's overview, the full **Scripting** section (EnScript basics, common
 > gotchas, game structure, and the engine-subsystems pages — inventory, actions,
-> networking, persistence) are written. The remaining discipline deep-dives (asset work,
-> tooling) are mostly still stubs (flagged in the sidebar) waiting to be written —
+> networking, persistence), and the full **Asset Work** section (pipeline & formats, P3D
+> setup, proxies, selections & naming, memory points, materials/RVMAT, textures, and
+> configs) are written. The remaining discipline deep-dives — the **Tooling & Setup**
+> how-tos — are mostly still stubs (flagged in the sidebar) waiting to be written, and
 > that's where contributors come in.
 
 ## What this is

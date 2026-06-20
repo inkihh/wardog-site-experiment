@@ -50,11 +50,11 @@ line here; new `engine-subsystems/` pages still autogenerate.
 - **Hazard divider:** `<hr class="hazard" />` renders the amber chevron rule (styled in
   `theme.css`); used on the landing page.
 - **Research notes:** page content is grounded in research captured under `resources/research/`
-  (one file per topic, e.g. `onboarding-*.md`) and indexed from `RESEARCH.md` — internal working
-  notes, not published pages. Primary grounding is the maintainer's local DayZ skills (see
-  CONCEPT.md "Authoring resources") and the BI Community Wiki.
+  (one file per topic/cluster, e.g. `onboarding-*`, `scripting-*`, `asset-*`) and indexed from
+  `RESEARCH.md` — internal working notes, not published pages. Primary grounding is the
+  maintainer's local DayZ skills (see CONCEPT.md "Authoring resources") and the BI Community Wiki.
 
-## Page inventory (34)
+## Page inventory (35)
 
 - **Landing:** `index.mdx` — `template: splash`, custom hero (`hero.svg`), discipline `LinkCard`
   grid, and "why this exists" `Card` grid.
@@ -65,9 +65,13 @@ line here; new `engine-subsystems/` pages still autogenerate.
   `overview` (index), `inventory`, `actions`, `networking`, `persistence`. (Grounded in the
   `dayz-dev-plugin` skill + BI Wiki; research notes `scripting-*` under `resources/research/`.
   The earlier flat `scripting/engine-subsystems.md` stub was replaced by this directory.)
-- **asset-work/** — `overview`, `p3d-setup` (stub, flagged top priority), `proxies` (stub),
-  `selections-and-naming` (stub), `memory-points` (stub), `materials-rvmat` (stub), `textures`
-  (stub), `configs` (stub).
+- **asset-work/** — fully written (no stubs). `overview`, `pipeline-and-formats` (formats &
+  pipeline orientation page, the asset analog of scripting `game-structure`), `p3d-setup` (the
+  top-requested topic; static-prop worked example), `proxies`, `selections-and-naming`,
+  `memory-points`, `materials-rvmat`, `textures`, `configs` (3D-optic + vehicle worked
+  examples). Centered on Object Builder (DayZ Tools), Blender/A3OB noted as the alternative; no
+  de-binarization anywhere. Grounded in the `dayz-items` skill + BI Wiki; research notes
+  `asset-*` under `resources/research/`.
 - **tooling-setup/** — `overview`, `packing` (stub), `file-patching` (stub), `publishing` (stub),
   `project-workflow` (stub).
 - **contributing/** — `overview`, `writing-docs`, `style-guide` (stub), `pr-process`.
@@ -76,6 +80,6 @@ line here; new `engine-subsystems/` pages still autogenerate.
   `dayz-dev-plugin` (GPL-3.0), the BI Community Wiki, and DayZ Tools — and is reached from the
   site footer (see `Footer.astro` in [theming.md](theming.md)).
 
-Overview pages, the full Getting-Started section, the full **Scripting** section, and the
-Contributing pages carry real content; the remaining discipline deep-dives (asset work, tooling)
-are mostly clearly-badged stubs.
+Overview pages, the full Getting-Started section, the full **Scripting** section, the full
+**Asset Work** section, and the Contributing pages carry real content; the remaining discipline
+deep-dives (the **Tooling & Setup** how-tos) are mostly clearly-badged stubs.

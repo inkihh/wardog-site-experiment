@@ -7,7 +7,7 @@ This file is an index. The actual implementation reference lives in per-topic fi
   the GitHub-new-tab head script, dev/build scripts, and project history.
 - **[implementation/content.md](implementation/content.md)** — Content & information architecture:
   the discipline taxonomy, sidebar autogeneration, page-authoring conventions (frontmatter, stub
-  badges, cross-linking), and the full 27-page inventory.
+  badges, cross-linking), and the full 35-page inventory.
 - **[implementation/theming.md](implementation/theming.md)** — Dark-only theme: palette tokens,
   typography, hero/cards, the forced-dark component overrides, and the brand asset set
   (logo/favicon/app-icon/hero) with the mark geometry.

@@ -269,15 +269,6 @@ hr.hazard {
 	);
 }
 
-/* Starlight reserves --sl-mobile-toc-height (3rem on mobile) in .main-frame
- * unconditionally, but the mobile "On this page" bar only renders on pages that
- * have a table of contents. On pages without one — the splash landing page, and
- * any page with no subheadings — that left a phantom gap between the header and
- * the content. Zero the reservation when no mobile TOC element is present. */
-:root:not(:has(mobile-starlight-toc)) {
-	--sl-mobile-toc-height: 0rem;
-}
-
 mobile-starlight-toc nav {
 	top: calc(var(--sl-nav-height) - 1px + var(--dzm-banner-h));
 }
@@ -285,8 +276,15 @@ mobile-starlight-toc nav {
 /* Desktop "On this page" TOC. Starlight pins it at top:0 (content offset by the
  * nav height); without the banner nudge it tucks up under the header. Push it
  * down by the banner height and trim its height so the bottom still lands at the
- * viewport edge. */
-.right-sidebar {
-	inset-block-start: var(--dzm-banner-h);
-	height: calc(100vh - var(--dzm-banner-h));
+ * viewport edge.
+ *
+ * Scope this to the breakpoint where Starlight makes the right sidebar
+ * `position: fixed` (>=72rem). Below it the sidebar is in normal flow, and
+ * forcing a `100vh`-tall height there inserts a huge empty block above the
+ * content — the mobile header/content gap. */
+@media (min-width: 72rem) {
+	.right-sidebar {
+		inset-block-start: var(--dzm-banner-h);
+		height: calc(100vh - var(--dzm-banner-h));
+	}
 }

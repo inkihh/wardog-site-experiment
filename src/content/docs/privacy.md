@@ -28,5 +28,5 @@ have their own privacy practices, which this notice does not cover.
 
 ## Changes
 
-This notice may be updated as the site evolves. See the [Imprint](/imprint/) for the
-site operator, or the [Contact page](/contact/) to get in touch.
+This notice may be updated as the site evolves. See the [Contact page](/contact/) to
+get in touch.

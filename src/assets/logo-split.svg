@@ -2,12 +2,12 @@
   <!--
     A circle sliced by two horizontal cuts into three sections, all the same
     off-white. The middle band juts right past the circle's edge, the top band is
-    nudged left, and the bottom stays centered. Wide gaps mark the cuts.
+    nudged left, and the bottom stays centered. Generous gaps mark the cuts.
   -->
   <defs>
-    <clipPath id="dzm-top"><rect x="-24" y="6" width="180" height="36"/></clipPath>
-    <clipPath id="dzm-mid"><rect x="-24" y="48" width="180" height="24"/></clipPath>
-    <clipPath id="dzm-bot"><rect x="-24" y="78" width="180" height="40"/></clipPath>
+    <clipPath id="dzm-top"><rect x="-24" y="0" width="180" height="38"/></clipPath>
+    <clipPath id="dzm-mid"><rect x="-24" y="49" width="180" height="22"/></clipPath>
+    <clipPath id="dzm-bot"><rect x="-24" y="82" width="180" height="40"/></clipPath>
   </defs>
   <g fill="#eef2f8">
     <circle cx="44" cy="60" r="44" clip-path="url(#dzm-top)"/>

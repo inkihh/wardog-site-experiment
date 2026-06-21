@@ -49,7 +49,7 @@ const contributors = contributorsByFile[entry.filePath] ?? [];
 								decoding="async"
 							/>
 							<span class="dzm-handle">@{c.login}</span>
-							<span class="dzm-count">{c.count}</span>
+							<span class="dzm-count">({c.count})</span>
 						</a>
 					</li>
 				))}
@@ -101,13 +101,13 @@ const contributors = contributorsByFile[entry.filePath] ?? [];
 		background: var(--sl-color-gray-6);
 	}
 	.dzm-handle {
+		min-width: 0;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
 	.dzm-count {
-		margin-left: auto;
-		padding-left: 0.4rem;
+		flex-shrink: 0;
 		color: var(--sl-color-gray-4);
 		font-variant-numeric: tabular-nums;
 	}
